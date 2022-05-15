@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "practice_exercise_2/imports_packages/pkg/city.proto";
+
+package my.pkg.line_1;
+
+message Street {
+  string name = 1;
+  City city = 2;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "practice_exercise_2/imports_packages/pkg/street.proto";
+
+message Building {
+  string name = 1;
+  int32 number = 2;
+  my.pkg.line_1.Street street = 3;
+}
