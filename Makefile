@@ -1,5 +1,7 @@
-BIN = proto-go-course
+BIN = bin/proto-go-course
 PROTO_DIR = proto
+
+UNAME := $(shell uname -s)
 OS = macos
 PACKAGE = $(shell head -1 go.mod | awk '{print $$2}')
 

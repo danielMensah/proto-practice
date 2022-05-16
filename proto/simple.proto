@@ -4,6 +4,9 @@ package example.dummy;
 
 option go_package = "github.com/danielMensah/proto-practice/proto";
 
-message Dummy {
+message Simple {
   uint32 id = 1;
+  bool is_simple = 2;
+  string name = 3;
+  repeated int32 simple_list = 4;
 }
